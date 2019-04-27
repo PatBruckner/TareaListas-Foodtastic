@@ -14,14 +14,12 @@ public class Food {
     @Expose
     private int image;
 
-    @Expose
-    private String type;
 
-    public Food(int id, String name, int image, String type) {
+    public Food(int id, String name, int image) {
         this.id = id;
         this.name = name;
         this.image = image;
-        this.type = type;
+
     }
 
     public int getId() {
@@ -48,12 +46,6 @@ public class Food {
         this.image = image;
     }
 
-    public String getType() {
-        return type;
-    }
 
-    public void setType(String type) {
-        this.type = type;
-    }
 }
 

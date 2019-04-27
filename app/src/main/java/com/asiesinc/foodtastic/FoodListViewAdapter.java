@@ -10,8 +10,6 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import com.asiesinc.foodtastic.Food;
-
 public class FoodListViewAdapter extends BaseAdapter {
 
     private Context context;
@@ -46,7 +44,7 @@ public class FoodListViewAdapter extends BaseAdapter {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             vista = inflater.inflate(R.layout.food_list_item_horizontal, null);
 
-            viewHolder.imageView = vista.findViewById(R.id.imageViewFood);
+
             viewHolder.textViewName = vista.findViewById(R.id.textViewName);
             viewHolder.textViewType = vista.findViewById(R.id.textViewType);
             vista.setTag(viewHolder);
